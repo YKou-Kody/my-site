@@ -1,14 +1,13 @@
 import React from 'react'
 
-const Icon = ({ icon, popup }) => {
+const Icon = ({ icon, popup, currentPath, page }) => {
     return (
-        <div className="icon group">
+        <div className={page == window.location.pathname ? "iconActive group" : "icon group"}>
             {icon}
-            <span className="icon-popup group-hover:scale-100">
-                testtest
+            < span className="icon-popup group-hover:scale-100" >
                 {popup}
-            </span>
-        </div>
+            </span >
+        </div >
     )
 }
 
