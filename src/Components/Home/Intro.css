@@ -1,0 +1,89 @@
+.intro{
+    display: flex;
+    height:100vh;
+   
+
+
+}
+
+.background{
+    clip-path : polygon(90% 0%, 100% 0%, 100% 100%, 50% 100%);
+    --tw-bg-opacity: 1;
+    background-color: rgb(168 85 247 / var(--tw-bg-opacity));
+    width: 100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    right:0;
+
+}
+
+.introRight{
+    flex:1;
+}
+
+.introLeft{
+    flex:1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introWrapper{
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.introTitle{
+    font-size:30px;
+    font-weight: 300;
+    
+}
+
+.introName{
+    font-size:60px;
+    
+}
+
+.introTitle{
+    height:50px;
+    overflow:hidden;
+}
+
+.introTitleItem{
+    height:50px;
+    font-size:30px;
+    color:rgb(168 85 247);
+    display:flex;
+    justify-content: center;
+
+}
+
+.introTitleWrapper{
+    height:100px;
+    animation:move 10s ease-in-out infinite alternate;
+    font-weight: bold;
+
+}
+/** 
+functon for title rotation
+*/
+@keyframes move {
+    25%{
+        transform: translateY(-50px);
+    }
+    50%{transform: translateY(-100px);}
+    75%{transform: translateY(-150px);}
+    100%{transform: translateY(-200px);}
+    
+}
+
+.photo{
+    width:30%;
+    height:30%;
+    object-fit:cover
+
+}

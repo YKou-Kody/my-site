@@ -23,7 +23,7 @@ const Navbar = () => {
     return (
         <div className="fixed h-screen top-0 w-16 bg-black m-0 flex flex-col bg-gray-900 text-white shadow-lg">
             {/* <Icon icon={<img src={Pic} />} popup="home" currentPath={currentPath} /> */}
-            <Pic />
+
             <button>
                 <Link to="/home" onClick={() => { setpage("/home") }}>
                     <Icon icon={<CgProfile size="25" />} page="/home" popup="Profile" />
@@ -35,7 +35,7 @@ const Navbar = () => {
                 </Link>
             </button>
             <button>
-                <Link to="education" onClick={() => { setpage("/home") }}>
+                <Link to="education" onClick={() => { setpage("/education") }}>
                     <Icon icon={<AiOutlineBook size="25" />} page="/education" popup="Education" />
                 </Link>
             </button>
