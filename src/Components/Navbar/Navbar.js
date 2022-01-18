@@ -6,6 +6,7 @@ import { RiComputerLine } from 'react-icons/ri';
 import { CgProfile } from "react-icons/cg"
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AnimatePresence, motion } from 'framer-motion';
 
 
 
@@ -21,11 +22,12 @@ const Navbar = () => {
 
     const [page, setpage] = useState('page')
     return (
-        <div className="fixed h-screen top-0 w-16 bg-black m-0 flex flex-col bg-gray-900 text-white shadow-lg">
+        <div className="fixed h-screen top-0 w-16 bg-black m-0 flex flex-col bg-gray-900 text-white shadow-lg"
+            style={{ zIndex: "5" }}>
             {/* <Icon icon={<img src={Pic} />} popup="home" currentPath={currentPath} /> */}
 
             <button>
-                <Link to="/home" onClick={() => { setpage("/home") }}>
+                <Link to="/my-site" onClick={() => { setpage("/home") }}>
                     <Icon icon={<CgProfile size="25" />} page="/home" popup="Profile" />
                 </Link>
             </button>
