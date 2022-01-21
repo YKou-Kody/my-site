@@ -27,8 +27,8 @@ const Navbar = () => {
             {/* <Icon icon={<img src={Pic} />} popup="home" currentPath={currentPath} /> */}
 
             <button>
-                <Link to="/my-site" onClick={() => { setpage("/home") }}>
-                    <Icon icon={<CgProfile size="25" />} page="/home" popup="Profile" />
+                <Link to="my-site" onClick={() => { setpage("/my-site") }}>
+                    <Icon icon={<CgProfile size="25" />} page="/my-site" popup="Profile" />
                 </Link>
             </button>
             <button>
