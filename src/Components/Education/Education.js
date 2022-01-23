@@ -12,7 +12,7 @@ const Education = () => {
             <div className="v-screen bg-gray-700 ">
                 <div className="flex justify-center pt-5">
                     <div className="title text-white">
-                        <h1 className="text-7xl">
+                        <h1 className="text-7xl font-semibold">
                             Education
                             <br></br>
                         </h1>
@@ -49,7 +49,7 @@ const Education = () => {
 
                 <div className="flex justify-center pt-5 pb-8">
                     <div className="title text-white pb-5">
-                        <h1 className="text-7xl font-sans">
+                        <h1 className="text-7xl font-semibold">
                             Skills
                             <br></br>
                         </h1>
