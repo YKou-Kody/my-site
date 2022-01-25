@@ -1,8 +1,23 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const [status, setStatus] = useState("");
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm("service_z246snx", "template_fqtkwdl", form.current,
+            "user_YEyFM4UYWLyr4utnBneR1")
+            .then(result => {
+                console.log(result)
+                setStatus('success')
+            }).catch(err => {
+                setStatus('error');
+            })
+
+    }
     return (
         <div className="flex flex-col v-screen h-screen bg-gray-700 items-center justify-center">
             <div className="flex flex-col justify-between pt-5 items-center" >
@@ -17,14 +32,14 @@ const Contact = () => {
                 <p class="text-white text-left text-xs italic">If you have any questions, or would like to collaborate on
                     interesting side projects, please leave a message here or message me on LinkedIn and I'll respond in a timely manner, thanks! </p>
                 <div className=" inline-block v-screen ">
-                    <form class=" shadow-xl shadow- shadow-purple-500 rounded-3xl px-8 pt-6 pb-3 mt-5 mb-4" >
+                    <form ref={form} onSubmit={sendEmail} class=" shadow-xl shadow- shadow-purple-500 rounded-3xl px-8 pt-6 pb-3 mt-5 mb-4" >
                         <div class="mb-6 justify-left bg">
                             <label class="block text-sm font-bold mb-2 text-left text-white" for="username">
                                 Email/Phone number:
                             </label>
                             <input class="shadow border rounded w-full py-2 px-3 text-gray-700 
                             focus:outline-none focus:outline-purple-400 " id="username"
-                                type="text" placeholder="Email" />
+                                type="text" name="from_name" placeholder="Email" />
                         </div>
                         <div class="mb-1">
                             <label class="block text-white text-sm font-bold mb-2 text-left" for="message">
@@ -32,18 +47,12 @@ const Contact = () => {
                             </label>
                             <textarea class="shadow rounded w-full py-2 px-3 
                             text-gray-700 mb-3  focus:outline-purple-400 focus:outline-none" id="message"
-                                placeholder="Leave a message here"
+                                placeholder="Leave a message here" name="message"
                                 rows="5" ></textarea>
 
                         </div>
-                        <button class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none
-                         text-white font-bold py-2 px-6 rounded-lg active:scale-75 hover:scale-105 active:bg-gray-600" type="button" onClick={(e) => {
-                                e.preventDefault();
-                                if (status == 'success') setStatus('error');
-                                else setStatus("success");
-                            }} style={{ transition: "0.5s" }}>
-                            <p className="text-xl">Send!</p>
-                        </button>
+                        <input type="submit" value="Send" className=" text-xl shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none
+                         text-white font-bold py-2 px-6 rounded-lg active:scale-75 hover:scale-105 active:bg-gray-600" style={{ transition: "0.5s" }} />
                         <p className='pt-3'>
                             {status == 'success' ? (
                                 <div>
