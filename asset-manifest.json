@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/my-site/static/css/main.45017de3.css",
-    "main.js": "/my-site/static/js/main.7c6b0bde.js",
+    "main.css": "/my-site/static/css/main.1c92d9b4.css",
+    "main.js": "/my-site/static/js/main.d2f0614f.js",
     "static/js/787.c6a73ca5.chunk.js": "/my-site/static/js/787.c6a73ca5.chunk.js",
     "static/media/vetAppPhoto.png": "/my-site/static/media/vetAppPhoto.6a30211f21a596a8c302.png",
     "static/media/picture.png": "/my-site/static/media/picture.ded16534fd65df12def1.png",
-    "static/media/uc-vert-rgb.png": "/my-site/static/media/uc-vert-rgb.d6f997a403752dd517e7.png",
     "static/media/MovieApp.png": "/my-site/static/media/MovieApp.d91406e7a17c8b3b17ed.png",
     "static/media/logo.svg": "/my-site/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/my-site/index.html",
-    "main.45017de3.css.map": "/my-site/static/css/main.45017de3.css.map",
-    "main.7c6b0bde.js.map": "/my-site/static/js/main.7c6b0bde.js.map",
+    "main.1c92d9b4.css.map": "/my-site/static/css/main.1c92d9b4.css.map",
+    "main.d2f0614f.js.map": "/my-site/static/js/main.d2f0614f.js.map",
     "787.c6a73ca5.chunk.js.map": "/my-site/static/js/787.c6a73ca5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45017de3.css",
-    "static/js/main.7c6b0bde.js"
+    "static/css/main.1c92d9b4.css",
+    "static/js/main.d2f0614f.js"
   ]
 }
