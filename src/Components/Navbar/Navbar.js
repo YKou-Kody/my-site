@@ -42,11 +42,11 @@ const Navbar = () => {
                 </Link>
             </button>
 
-            <button>
+            {/* <button>
                 <Link to="hobbies" onClick={() => { setpage("/hobbies") }}>
                     <Icon icon={<RiComputerLine size="25" />} page="/hobbies" popup="🎮Hobbies" />
                 </Link>
-            </button>
+            </button> */}
             <button>
                 <Link to="contact" onClick={() => { setpage("/contact") }}>
                     <Icon icon={<AiOutlineMail size="25" />} popup="Contact me" page="/contact" />

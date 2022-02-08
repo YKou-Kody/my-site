@@ -43,7 +43,7 @@ const Intro = () => {
                             <div className="introTitleWrapper ">
                                 <div className="introTitleItem">Software Developer</div>
                                 <div className="introTitleItem">Software Engineer</div>
-                                <div className="introTitleItem">Team Player</div>
+                                <div className="introTitleItem">Web Developer</div>
                             </div>
                         </div>
                         <div className="relative top-4 max-w-lg text-left text-white">
@@ -52,7 +52,7 @@ const Intro = () => {
                         </div>
                         <br></br>
                         <div className="relative top-4 max-w-lg text-left text-white">
-                            I'm passionate about developing software and giving life to all my fun ideas through the power of technology and programming.
+                            I'm passionate about developing software and giving life to interesting ideas through the power of technology and programming.
                         </div>
                         <br></br>
 

@@ -26,8 +26,11 @@ const Education = () => {
                 <div className="flex justify-center mb-8 mt-8 pt-3">
                     <div className="flex justify-center ">
                         <div className="education">
-                            <div className="w-64 mt-5">
-                                <img src={require("../../Images/uc-vert-rgb.png")} />
+                            <div className=" mt-5">
+                                <h1 className="text-2xl" >Master of Engineering in Computer Software Engineering</h1>
+                                <h2 className="text-lg mt-3">University of Calgary</h2>
+                                <h2 className="text-lg mt-3">Calgary, Alberta</h2>
+                                <h2 className="text-lg mt-3">May 2021 - May 2022</h2>
                             </div>
 
                         </div>
@@ -38,8 +41,12 @@ const Education = () => {
                 <div className="flex justify-center mb-8 mt-8 pt-3">
                     <div className="flex justify-center ">
                         <div className="education">
-                            <div className="w-64 mt-5">
-                                <img src={require("../../Images/uc-vert-rgb.png")} />
+                            <div className="mt-5">
+                                <h1 className="text-2xl" >Bachelor of Science in Chemical Engineering</h1>
+                                <h2 className="text-lg mt-3">University of Calgary</h2>
+                                <h2 className="text-lg mt-3">Calgary, Alberta</h2>
+                                <h2 className="text-lg mt-3">September 2015 - May 2020</h2>
+
                             </div>
 
                         </div>
