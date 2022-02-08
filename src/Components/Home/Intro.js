@@ -32,7 +32,7 @@ const Intro = () => {
                             <img src={require("../../Images/picture.png")} ></img>
                         </p>
                         <h2 className="introTitle mt-3 text-white">
-                            Hello, I am
+                            👋Hello, I am
                         </h2>
 
                         <h1 className="introName relative bottom-2 text-white">
