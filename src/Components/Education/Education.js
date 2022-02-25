@@ -9,7 +9,7 @@ const Education = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}>
 
-            <div className="v-screen bg-gray-700 ">
+            <div className="h-screen bg-gray-700 ">
                 <div className="flex justify-center pt-5">
                     <div className="title text-white">
                         <h1 className="text-7xl font-semibold">
